@@ -1,8 +1,8 @@
 <?php
 $host = "localhost";
-$usuario = "dannymrtnz";
-$contrasena = "Kahize15xD";
-$base = "bechamel";
+$usuario = "";
+$contrasena = "";
+$base = "";
 
 $conn = new mysqli($host, $usuario, $contrasena, $base);
 
