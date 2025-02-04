@@ -1,0 +1,43 @@
+
+[
+    {
+        "userId": 1,
+        "mascota": {
+            "especie":"Perrita",
+            "raza":"Mestizo",
+            "sexo":"Hembra",
+            "nombre":"POPPYS",
+            "apellido":"MARTÍNEZ",
+            "edad": 4,
+            "color de pelaje":"Café tigreado",
+            "color de ojos":"cafe oscuro",
+            "numerotelefono": 73300192,
+            "numerowhatsapp": 73300192,
+            "dirección":"km 11, Colonia San Antonio, Calle Real Madrid,",
+            "municipio":"Apopa",
+            "departamento":"San Salvador",
+            "nombre del dueño":"Daniela MARTÍNEZ",
+            "foto": "/usuarios/1/perfil/poppys.jpeg"
+        }
+    },
+    {
+        "userId": 2,
+        "mascota": {
+            "especie":"Perrita",
+            "raza":"PITBULL",
+            "sexo":"Hembra",
+            "nombre":"LAYLA",
+            "apellido":"GONZALEZ",
+            "edad": 4,
+            "color de pelaje":"Cafe con amarillo",
+            "color de ojos":"cafe oscuro",
+            "numerotelefono": 64209130,
+            "numerowhatsapp": 64209130,
+            "dirección":"Col la Gloria, pasaje G5 Block G3, casa #11",
+            "municipio":"Mejicanos",
+            "departamento":"San Salvador",
+            "nombre del dueño":"Adriana Gonzalez",
+            "foto": "/assets/js/fotosU/laylaGonzalez.jpeg"
+        }
+    }
+]

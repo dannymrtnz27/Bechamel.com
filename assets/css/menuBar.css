@@ -1,0 +1,83 @@
+* {
+    margin: 0%;
+    padding: 0%;
+}
+body {
+    width: 100%;
+    height: 24%;
+    background-color: black;
+    position: absolute;
+    inset: -60% 0% 0% 0%;
+    margin: auto;
+}
+.barra {
+    display: flex;
+    gap: 10%;
+    justify-content: center;
+    align-items: center;
+}
+svg {
+    scale: 75%;
+}
+.iconD svg {
+    width: 28px;
+    height: 32px;
+    text-align: center;
+    cursor: pointer;
+    border-radius: 5px;
+}
+.iconLook svg {
+    width: 38px;
+    height: 28px;
+    text-align: center;
+    cursor: pointer;
+    border-radius: 5px;
+}
+.iconVi svg {
+    width: 48px;
+    height: 30px;
+    text-align: center;
+    cursor: pointer;
+    border-radius: 5px;
+}
+.iconshopping svg {
+    width: 32px;
+    height: 30px;
+    text-align: center;
+    cursor: pointer;
+    border-radius: 2px;
+}
+.iconPro svg {
+    width: 32px;
+    height: 32px;
+    text-align: center;
+    cursor: pointer;
+    border-radius: 5px;
+}
+.iconCon svg {
+    width: 32px;
+    height: 30px;
+    text-align: center;
+    cursor: pointer;
+    border-radius: 5px;
+}
+svg:active {
+    animation: icons 1s running;
+}
+@keyframes icons {
+    0% {
+        fill: #5900ff;
+        scale: 100%;
+        box-shadow: 0 1px 1px white;
+    }
+    50% {
+        fill: #5900ff;
+        scale: 125%;
+        box-shadow: 0 1px 15px white;
+    }
+    100% {
+        fill: #5900ff;
+        scale: 100%;
+        box-shadow: 0 1px 1px white;
+    }
+}

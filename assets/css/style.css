@@ -1,0 +1,1953 @@
+* {
+    margin: 0%;
+    padding: 0%;
+}
+body {
+    background: linear-gradient(150deg, rgb(69, 255, 212), rgb(0, 197, 151),rgb(69, 255, 212), rgb(0, 197, 151));
+    margin: 0% 0% 0% 0%;
+    height: 100vh;
+}
+.marcanombre{
+    width: 75%;
+    height: 15%;
+    position: relative;
+    inset: -2% 0% 0% 0%;
+    margin: 0% 0% 0% 13%;
+}
+@media (min-width: 228px) {
+    .ContenedorGeneral {
+        width: 98%;
+        height: 86.5%;
+        position: relative;
+        inset: 1% 0% 0% 0%;
+        padding: 5px 0;
+        display: grid;
+        gap: 1%;
+        
+    }
+    .brand {
+        color: rgb(44, 44, 44);
+        width: 100%;
+        font-size: 120%;
+        font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+        position: absolute;
+        text-align: center;
+        bottom: 2%;
+        z-index: 3;
+    }
+    .footer {
+        width: 100%;
+        height: 15%;
+        position: absolute;
+        left: -0.5%;
+        top: 1%;
+    }
+    .frontmenu {
+        width: 100%;
+        height: 6%;
+        position: fixed;
+        background-color: black;
+        left: 0%;
+        bottom: 0%;
+        z-index: 3;
+    }
+    .footerback {
+        width: 98%;
+        height: 74%;
+        position: absolute;
+        left: 0.5%;
+        top: 34%;
+        z-index: 1;
+    }
+    .contenedor-body {
+        *background: linear-gradient(150deg, rgba(0, 42, 182, 0.8), rgba(48, 0, 102, 0.8));
+        width: 98%;
+        height: 107.5%;
+        margin: 0% 0% 0% 0%;
+        border-radius: 5px;
+        position: absolute;
+        left: 1%;
+        right: 2%;
+        bottom: 2%;
+        top: -10%;
+        z-index: 1;
+    }
+    .contenedor-contacto {
+        height: 43%;
+    }
+    .fotoAnuario {
+        width: 125px;
+        height: 70%;
+        border-radius: 10%;
+        position: absolute;
+        inset: 0;
+        margin: auto;
+        box-shadow: 0px 1px 1px 1px white;
+        
+    }
+    .reaccione {
+        width: 125px;
+        height: 45px;
+        position: absolute;
+        inset: 54% 0% 0% 0% ;
+        margin: auto;
+        background-color: rgba(44, 44, 44, 0.5);
+        border-radius: 0% 0% 15px 15px;
+        mask-image: linear-gradient(1deg,black 60%, transparent);
+    }
+    .line {
+        width: 96%; 
+        height: 3px;
+        margin: 0% 0% 0% 2%;
+        background-color: #ffffff;
+        top: 10%;
+        left: 5%;
+    }
+    .heartli{
+        width: 40px; 
+        height: 28px;
+        stroke-width: 11px;
+        position: absolute;
+        bottom: 1%;
+        left: 5%;
+    }
+    .heartli path {
+        fill: transparent;
+        stroke: 10%;
+        stroke: #ffffff;
+    }
+    .like-count {
+        color: #ffffff;
+        font-size: 20px;
+    }
+    .viewOpen{
+        width: 37px;
+        height: 29px;
+        margin: 0% 0% 0% 0%;
+        position: absolute;
+        bottom: 1%;
+        right: 5%;
+    }
+    .viewOpen:active{
+        animation: viewRebot 1s running;
+    }
+    .pic {
+        width: 50%;
+        height: 40%;
+        position: absolute;
+        display: flex;
+        margin: 0 auto;
+        text-align: center;
+        left: 0%;
+        top: -1%;
+    }
+    article svg {
+        position: absolute;
+        inset: 0;
+        margin: auto;
+        scale: 0;
+        opacity: 0%;
+    }
+    .contenedor-viewer {
+        height: 92%;
+        width: 100%;
+        border-radius: 5px;
+        *border: 3px solid rgba(255, 255, 255, 0.7);
+        backdrop-filter: blur(25px);
+        position: absolute;
+        display: flex;
+        left: 0%;
+        top: 3%;
+    }
+   /* Contenedor del formulario */
+    .contenedorRegistro {
+        text-align: center; /* Centra el texto del contenido */
+        background: #ffffff;
+        padding: 20px 30px;
+        border-radius: 10px;
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+        max-width: 260px; /* Tamaño máximo del formulario */
+        width: 100%; /* Ocupa el 100% dentro del máximo permitido */
+        position: absolute;
+        inset: 1% 0% 0% 5%;
+    }
+    h1{
+        font-size: 20px;
+    }
+
+    /* Ajustes del formulario */
+    .contenedorRegistro form {
+        display: flex;
+        flex-direction: column; /* Coloca los elementos en una columna */
+        gap: 7px; /* Espaciado entre los elementos */
+    }
+    .bechamelbrand{
+        stroke: #00BA8F;
+        fill: #00BA8F;
+    }
+    .bienvenida{
+        border-radius: 10px;
+        background-color: #ffffff;
+        width: 80%;
+        height: 5%;
+        color: #00BA8F;
+        position: absolute;
+        inset: 0% 0% 0% 0%;
+        margin: auto;
+        display: flex;
+    }
+    /* Campos del formulario */
+    .contenedorRegistro input, .contenedorRegistro button {
+        padding: 10px;
+        font-size: 16px;
+        border: 1px solid #ccc;
+        border-radius: 5px;
+        width: 100%; /* Asegura que ocupen todo el ancho */
+        box-sizing: border-box; /* Incluye el padding dentro del ancho */
+    }
+
+    /* Botón de registro */
+    .contenedorRegistro button {
+        background-color: #007bff;
+        color: white;
+        border: none;
+        cursor: pointer;
+        transition: background-color 0.3s ease;
+    }
+
+    .contenedorRegistro button:hover {
+        background-color: #0056b3;
+    }
+    .nombres {
+        width: 50%;
+        height: 20vh;
+        position: absolute;
+        right: 1%;
+        top: 5%;
+        border-radius: 8px;
+        display: flex;
+        flex-wrap: wrap;
+        gap: 3%;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+    }
+    .name {
+        color: rgb(231, 231, 231);
+        font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+        text-align: center;
+        font-size: 80%;
+    }
+    .cognome {
+        color: rgb(231, 231, 231);
+        font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+        text-align: center;
+        font-size: 80%;
+    }
+    .edad {
+        color: azure;
+        font-size: 100%;
+        font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+        text-align: center;
+    }
+    .raza {
+        color: azure;
+        font-size: 15px;
+        font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+        text-align: center;
+    }
+    .galery {
+        width: 100%;
+        position: absolute;
+        display: flex;
+        flex-wrap: wrap;
+        gap: 3%;
+        right: 0%;
+        top: 43%;
+    }
+    .gale {
+        width: 22%;
+        border-radius: 10px;
+        cursor: pointer;
+        scale: 100%;
+    }
+    .gale:active {
+        animation: icons 1s running;
+        *box-shadow: 0 1px 25px #ffffff;
+    }
+    @keyframes icons {
+        0% {
+            scale: 100%;
+        }
+        50% {
+            scale: 125%;
+        }
+        100% {
+            scale: 100%;
+        }
+    }
+    input[type="text"] {
+        width: 200px;
+        height: 25px;
+        position: absolute;
+        inset: 0% 0% 75% 0%;
+        margin: auto;
+        text-align: center;
+        align-items: center;
+    }
+    .results {
+        position: absolute;
+        margin: 15% 0% 0% 0%;
+        z-index: 4;
+    }
+    li h1 {
+        font-size: 25px;
+        color: #ffffff;
+    }
+
+    ul {
+        list-style-type: none;
+        padding: 0;
+    }
+
+    li {
+        background: linear-gradient(150deg, rgba(0, 42, 182, 0.2), rgba(253, 0, 177, 0.2));
+        border: 1px solid #8c1aa3;
+        border-radius: 4px;
+        margin: 10px 0px 0px 0px;
+        padding: 15px;
+        display: flex;
+        gap: 5%;
+        align-items: center;
+        color: #ffffff;
+        cursor: pointer;
+    }
+
+    li img {
+        width: 60px;
+        height: 55px;
+        border-radius: 50%;
+        margin-right: 15px;
+    }
+
+    strong {
+        display: block;
+        color: #ffffff;
+    }
+
+    .pet-info {
+        color: hwb(0 77% 23%);
+    }
+    .fotosg{
+        display: block;
+        width: 98%;
+        height: 48%;
+        position: absolute;
+        top: 52%;
+        left: 1%;
+        right: 5%;
+        font-size: 90%;
+        text-align: justify;
+        font-family: Arial, Helvetica, sans-serif;
+    }
+    .messenger {
+        position: absolute;
+        top: 52%;
+        left: 5%;
+        right: 5%;
+        font-size: 90%;
+        text-align: justify;
+        font-family: Arial, Helvetica, sans-serif;
+        color: azure;
+    }
+    .messenger b {
+        color: rgb(255, 255, 255);
+    }
+    .Galefotos {
+        display: none;
+        width: 105%;
+        height: 48%;
+        position: absolute;
+        top: 52%;
+        left: -2%;
+        right: 0%;
+        font-size: 90%;
+        text-align: justify;
+        font-family: Arial, Helvetica, sans-serif;
+    }
+    .Galevideos{
+        display: none;
+        width: 105%;
+        height: 48%;
+        position: absolute;
+        top: 52%;
+        left: -2%;
+        right: 0%;
+        font-size: 90%;
+        text-align: justify;
+        font-family: Arial, Helvetica, sans-serif;
+    }
+    .galeriaVideo{
+        width: 100%;
+        height: 94%;
+    }
+    .galeriaFoto{
+        width: 100%;
+        height: 94%;
+    }
+    .GaleVideos {
+        display: none;
+        width: 98%;
+        height: 48%;
+        position: absolute;
+        top: 52%;
+        left: 1%;
+        right: 5%;
+        font-size: 90%;
+        text-align: justify;
+        font-family: Arial, Helvetica, sans-serif;
+    }
+    .galeriaVideos{
+        width: 100%;
+        height: 100%;
+    }
+    .cuadrobehindu {
+        display: none;
+        width: 90%;
+        height: 33%;
+        position: absolute;
+        top: 52%;
+        left: 5%;
+        right: 5%;
+        font-size: 90%;
+        text-align: justify;
+        font-family: Arial, Helvetica, sans-serif;
+        color: azure;
+    }
+    .fab {
+        animation: fade 3s;
+        position: absolute;
+        left: 25%;
+        top: 86%;
+        font-size: 66%;
+        width: 50%;
+        text-align: center;
+        text-decoration: none;
+        padding: 2% 1% 2% 1%;
+        margin: 1px 1px;
+        border-radius: 5px;
+    }
+    .fab:hover {
+        opacity: 0.7;
+        text-align: center;
+    }
+        
+    .fa-whatsapp {
+        background: linear-gradient(150deg, #c70202, #fd0000);
+        color: white;
+        text-align: center;
+        font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    }
+}
+/*
+@media (min-width: 450px) {
+    .ContenedorGeneral {
+        width: 98%;
+        height: 105%;
+        position: relative;
+        inset: 1% 0% 0% 1%;
+        padding: 5px 0;
+        display: grid;
+        gap: 1%;
+    }
+    .brand {
+        background-position: center center;
+        color: rgb(44, 44, 44);
+        font-size: 120%;
+        font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+        position: absolute;
+        right: 34%;
+        bottom: 2%;
+        z-index: 3;
+    }
+    .footer {
+        width: 100%;
+        height: 75%;
+        position: absolute;
+        left: 0%;
+        top: 1%;
+    }
+    .footerback {
+        width: 98%;
+        height: 74%;
+        position: absolute;
+        left: 0.5%;
+        top: 34%;
+        z-index: 1;
+    }
+    .contenedor-body {
+        background-color: rgb(44, 44, 44);
+        width: 97%;
+        height: 76.5%;
+        margin: 0% 0% 0% 0%;
+        border-radius: 5px;
+        position: absolute;
+        left: 1%;
+        right: 2%;
+        bottom: 2%;
+        top: 15%;
+        z-index: 1;
+    }
+    .contenedor-contacto {
+        height: 43%;
+    }
+    .reaccione {
+        width: 100%;
+        height: 20%;
+        position: absolute;
+        bottom: 0%;
+        background-color: rgba(44, 44, 44, 0.5);
+        border-radius: 0% 0% 15% 15%;
+        mask-image: linear-gradient(1deg,black 60%, transparent);
+    }
+    .line {
+        width: 96%; 
+        height: 3px;
+        margin: 0% 0% 0% 2%;
+        background-color: #ffffff;
+        top: 10%;
+        left: 5%;
+    }
+    .heartli{
+        width: 40px; 
+        height: 28px;
+        stroke-width: 11px;
+        position: absolute;
+        bottom: 1%;
+        left: 5%;
+    }
+    .heartli path {
+        fill: transparent;
+        stroke: 10%;
+        stroke: #ffffff;
+    }
+    .viewOpen{
+        width: 37px;
+        height: 29px;
+        margin: 0% 0% 0% 0%;
+        position: absolute;
+        bottom: 1%;
+        right: 5%;
+    }
+    .viewOpen:active{
+        animation: viewRebot 1s running;
+    }
+    .pic {
+        padding: 0% 0% 0% 0%;
+        margin: 0% 0% 0% 0%;
+        width: 45%;
+        height: 40%;
+        position: absolute;
+        left: 4%;
+        top: 2%;
+    }
+    .foto {
+        padding: 0% 0% 0% 0%;
+        margin: 0% 0% 0% 0%;
+        width: 100%;
+        height: 100%;
+        border-radius: 10%;
+        position: absolute;
+        inset: 0;
+        margin: auto;
+        box-shadow: 0px 3px 6px 3px;
+        
+    }
+    article svg {
+        position: absolute;
+        inset: 0;
+        margin: auto;
+        scale: 0;
+        opacity: 0%;
+    }
+    .contenedor-viewer {
+        background: linear-gradient(150deg, #919191, #b9b8b8);
+        height: 91%;
+        width: 88%;
+        border-radius: 5px;
+        border: 3px solid rgba(145, 145, 145, 0.7);
+        backdrop-filter: blur(25px);
+        position: absolute;
+        display: flex;
+        left: 6%;
+        top: 4%;
+    }
+    .nombres {
+        padding: 0% 0% 0% 0%;
+        margin: 0% 0% 0% 0%;
+        width: 19vh;
+        height: 22vh;
+        position: absolute;
+        right: 1%;
+        top: 2%;
+        border-radius: 8px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+    }
+    .name {
+        color: rgb(48, 48, 48);
+        width: 1%;
+        font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+        text-align: justify;
+        position: absolute;
+        left: 18%;
+        top: 4%;
+        font-size: 150%;
+    }
+    .cognome {
+        color: rgb(48, 48, 48);
+        font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+        position: absolute;
+        left: 7%;
+        top: 25%;
+        font-size: 150%;
+    }
+    .edad {
+        color: rgb(231, 231, 231);
+        font-size: 100%;
+        font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+        position: absolute;
+        left: 20%;
+        top: 50%;
+    }
+    .raza {
+        color: rgb(48, 48, 48);
+        font-size: 20px;
+        font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+        position: absolute;
+        left: 29%;
+        top: 65%;
+    }
+    .messenger {
+        position: absolute;
+        top: 46%;
+        left: 5%;
+        right: 5%;
+        font-size: 90%;
+        text-align: justify;
+        font-family: Arial, Helvetica, sans-serif;
+    }
+    .fab {
+        animation: fade 3s;
+        position: absolute;
+        left: 25%;
+        top: 86%;
+        font-size: 66%;
+        width: 50%;
+        text-align: center;
+        text-decoration: none;
+        padding: 2% 1% 2% 1%;
+        margin: 1px 1px;
+        border-radius: 5px;
+    }
+    .fab:hover {
+        opacity: 0.7;
+        text-align: center;
+    }
+        
+    .fa-whatsapp {
+        background: linear-gradient(150deg, #c70202, #fd0000);
+        color: white;
+        text-align: center;
+        font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    }
+}
+
+@media (min-width: 500px) {
+    .ContenedorGeneral {
+        width: 98%;
+        height: 105%;
+        position: relative;
+        inset: 1% 0% 0% 1%;
+        padding: 5px 0;
+        display: grid;
+        gap: 1%;
+    }
+    .brand {
+        background-position: center center;
+        color: rgb(44, 44, 44);
+        font-size: 120%;
+        font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+        position: absolute;
+        right: 36%;
+        bottom: 2%;
+        z-index: 3;
+    }
+    .footer {
+        width: 100%;
+        height: 75%;
+        position: absolute;
+        left: 0%;
+        top: 1%;
+    }
+    .footerback {
+        width: 98%;
+        height: 74%;
+        position: absolute;
+        left: 0.5%;
+        top: 34%;
+        z-index: 1;
+    }
+    .contenedor-body {
+        background-color: rgb(44, 44, 44);
+        width: 97%;
+        height: 76.5%;
+        margin: 0% 0% 0% 0%;
+        border-radius: 5px;
+        position: absolute;
+        left: 1%;
+        right: 2%;
+        bottom: 2%;
+        top: 15%;
+        z-index: 1;
+    }
+    .contenedor-contacto {
+        height: 43%;
+    }
+    .reaccione {
+        width: 100%;
+        height: 20%;
+        position: absolute;
+        bottom: 0%;
+        background-color: rgba(44, 44, 44, 0.5);
+        border-radius: 0% 0% 15% 15%;
+        mask-image: linear-gradient(1deg,black 60%, transparent);
+    }
+    .line {
+        width: 96%; 
+        height: 3px;
+        margin: 0% 0% 0% 2%;
+        background-color: #ffffff;
+        top: 10%;
+        left: 5%;
+    }
+    .heartli{
+        width: 40px; 
+        height: 28px;
+        stroke-width: 11px;
+        position: absolute;
+        bottom: 1%;
+        left: 5%;
+    }
+    .heartli path {
+        fill: transparent;
+        stroke: 10%;
+        stroke: #ffffff;
+    }
+    .viewOpen{
+        width: 37px;
+        height: 29px;
+        margin: 0% 0% 0% 0%;
+        position: absolute;
+        bottom: 1%;
+        right: 5%;
+    }
+    .viewOpen:active{
+        animation: viewRebot 1s running;
+    }
+    .pic {
+        padding: 0% 0% 0% 0%;
+        margin: 0% 0% 0% 0%;
+        width: 45%;
+        height: 40%;
+        position: absolute;
+        left: 4%;
+        top: 2%;
+    }
+    .foto {
+        padding: 0% 0% 0% 0%;
+        margin: 0% 0% 0% 0%;
+        width: 100%;
+        height: 100%;
+        border-radius: 10%;
+        position: absolute;
+        inset: 0;
+        margin: auto;
+        box-shadow: 0px 3px 6px 3px;
+        
+    }
+    article svg {
+        position: absolute;
+        inset: 0;
+        margin: auto;
+        scale: 0;
+        opacity: 0%;
+    }
+    .contenedor-viewer {
+        background: linear-gradient(150deg, #919191, #b9b8b8);
+        height: 91%;
+        width: 88%;
+        border-radius: 5px;
+        border: 3px solid rgba(145, 145, 145, 0.7);
+        backdrop-filter: blur(25px);
+        position: absolute;
+        display: flex;
+        left: 6%;
+        top: 4%;
+    }
+    .nombres {
+        padding: 0% 0% 0% 0%;
+        margin: 0% 0% 0% 0%;
+        width: 25vh;
+        height: 22vh;
+        position: absolute;
+        right: 3%;
+        top: 2%;
+        border-radius: 8px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+    }
+    .name {
+        color: rgb(48, 48, 48);
+        width: 1%;
+        font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+        text-align: justify;
+        position: absolute;
+        left: 18%;
+        top: 4%;
+        font-size: 200%;
+    }
+    .cognome {
+        color: rgb(48, 48, 48);
+        font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+        position: absolute;
+        left: 7%;
+        top: 25%;
+        font-size: 200%;
+    }
+    .edad {
+        color: rgb(231, 231, 231);
+        font-size: 150%;
+        font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+        position: absolute;
+        left: 20%;
+        top: 50%;
+    }
+    .raza {
+        color: rgb(48, 48, 48);
+        font-size: 30px;
+        font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+        position: absolute;
+        left: 29%;
+        top: 65%;
+    }
+    .messenger {
+        position: absolute;
+        top: 46%;
+        left: 5%;
+        right: 5%;
+        font-size: 90%;
+        text-align: justify;
+        font-family: Arial, Helvetica, sans-serif;
+    }
+    .fab {
+        animation: fade 3s;
+        position: absolute;
+        left: 25%;
+        top: 86%;
+        font-size: 66%;
+        width: 50%;
+        text-align: center;
+        text-decoration: none;
+        padding: 2% 1% 2% 1%;
+        margin: 1px 1px;
+        border-radius: 5px;
+    }
+    .fab:hover {
+        opacity: 0.7;
+        text-align: center;
+    }
+        
+    .fa-whatsapp {
+        background: linear-gradient(150deg, #c70202, #fd0000);
+        color: white;
+        text-align: center;
+        font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    }
+}
+@media (min-width: 650px) {
+    .ContenedorGeneral {
+        width: 98%;
+        height: 105%;
+        position: relative;
+        inset: 1% 0% 0% 1%;
+        padding: 5px 0;
+        display: grid;
+        gap: 1%;
+    }
+    .brand {
+        background-position: center center;
+        color: rgb(44, 44, 44);
+        font-size: 120%;
+        font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+        position: absolute;
+        right: 40%;
+        bottom: 2%;
+        z-index: 3;
+    }
+    .footer {
+        width: 100%;
+        height: 75%;
+        position: absolute;
+        left: 0%;
+        top: 1%;
+    }
+    .footerback {
+        width: 98%;
+        height: 74%;
+        position: absolute;
+        left: 0.5%;
+        top: 34%;
+        z-index: 1;
+    }
+    .contenedor-body {
+        background-color: rgb(44, 44, 44);
+        width: 97%;
+        height: 76.5%;
+        margin: 0% 0% 0% 0%;
+        border-radius: 5px;
+        position: absolute;
+        left: 1%;
+        right: 2%;
+        bottom: 2%;
+        top: 15%;
+        z-index: 1;
+    }
+    .contenedor-contacto {
+        height: 43%;
+    }
+    .reaccione {
+        width: 100%;
+        height: 20%;
+        position: absolute;
+        bottom: 0%;
+        background-color: rgba(44, 44, 44, 0.5);
+        border-radius: 0% 0% 15% 15%;
+        mask-image: linear-gradient(1deg,black 60%, transparent);
+    }
+    .line {
+        width: 96%; 
+        height: 3px;
+        margin: 0% 0% 0% 2%;
+        background-color: #ffffff;
+        top: 10%;
+        left: 5%;
+    }
+    .heartli{
+        width: 40px; 
+        height: 28px;
+        stroke-width: 11px;
+        position: absolute;
+        bottom: 1%;
+        left: 5%;
+    }
+    .heartli path {
+        fill: transparent;
+        stroke: 10%;
+        stroke: #ffffff;
+    }
+    .viewOpen{
+        width: 37px;
+        height: 29px;
+        margin: 0% 0% 0% 0%;
+        position: absolute;
+        bottom: 1%;
+        right: 5%;
+    }
+    .viewOpen:active{
+        animation: viewRebot 1s running;
+    }
+    .pic {
+        padding: 0% 0% 0% 0%;
+        margin: 0% 0% 0% 0%;
+        width: 30%;
+        height: 40%;
+        position: absolute;
+        left: 11%;
+        top: 2%;
+    }
+    .foto {
+        padding: 0% 0% 0% 0%;
+        margin: 0% 0% 0% 0%;
+        width: 100%;
+        height: 100%;
+        border-radius: 10%;
+        position: absolute;
+        inset: 0;
+        margin: auto;
+        box-shadow: 0px 3px 6px 3px;
+        
+    }
+    article svg {
+        position: absolute;
+        inset: 0;
+        margin: auto;
+        scale: 0;
+        opacity: 0%;
+    }
+    .contenedor-viewer {
+        background: linear-gradient(150deg, #919191, #b9b8b8);
+        height: 91%;
+        width: 88%;
+        border-radius: 5px;
+        border: 3px solid rgba(145, 145, 145, 0.7);
+        backdrop-filter: blur(25px);
+        position: absolute;
+        display: flex;
+        left: 6%;
+        top: 4%;
+    }
+    .nombres {
+        padding: 0% 0% 0% 0%;
+        margin: 0% 0% 0% 0%;
+        width: 32vh;
+        height: 29vh;
+        position: absolute;
+        right: 7%;
+        top: 2%;
+        border-radius: 8px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+    }
+    .name {
+        color: rgb(48, 48, 48);
+        width: 1%;
+        font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+        text-align: justify;
+        position: absolute;
+        left: 18%;
+        top: 4%;
+        font-size: 250%;
+    }
+    .cognome {
+        color: rgb(48, 48, 48);
+        font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+        position: absolute;
+        left: 7%;
+        top: 25%;
+        font-size: 250%;
+    }
+    .edad {
+        color: rgb(231, 231, 231);
+        font-size: 150%;
+        font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+        position: absolute;
+        left: 26%;
+        top: 50%;
+    }
+    .raza {
+        color: rgb(48, 48, 48);
+        font-size: 30px;
+        font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+        position: absolute;
+        left: 32%;
+        top: 65%;
+    }
+    .messenger {
+        position: absolute;
+        top: 46%;
+        left: 5%;
+        right: 5%;
+        font-size: 125%;
+        text-align: justify;
+        font-family: Arial, Helvetica, sans-serif;
+    }
+    .fab {
+        animation: fade 3s;
+        position: absolute;
+        left: 25%;
+        top: 86%;
+        font-size: 66%;
+        width: 50%;
+        text-align: center;
+        text-decoration: none;
+        padding: 2% 1% 2% 1%;
+        margin: 1px 1px;
+        border-radius: 5px;
+    }
+    .fab:hover {
+        opacity: 0.7;
+        text-align: center;
+    }
+        
+    .fa-whatsapp {
+        background: linear-gradient(150deg, #c70202, #fd0000);
+        color: white;
+        text-align: center;
+        font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    }
+}
+
+@media (min-width: 800px) {
+    .ContenedorGeneral {
+        width: 98%;
+        height: 105%;
+        position: relative;
+        inset: 1% 0% 0% 1%;
+        padding: 5px 0;
+        display: grid;
+        gap: 1%;
+    }
+    .brand {
+        background-position: center center;
+        color: rgb(44, 44, 44);
+        font-size: 120%;
+        font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+        position: absolute;
+        right: 32%;
+        bottom: 2%;
+        z-index: 3;
+    }
+    .footer {
+        width: 100%;
+        height: 75%;
+        position: absolute;
+        left: 0%;
+        top: 1%;
+    }
+    .footerback {
+        width: 98%;
+        height: 74%;
+        position: absolute;
+        left: 0.5%;
+        top: 34%;
+        z-index: 1;
+    }
+    .contenedor-body {
+        background-color: rgb(44, 44, 44);
+        width: 97%;
+        height: 76.5%;
+        margin: 0% 0% 0% 0%;
+        border-radius: 5px;
+        position: absolute;
+        left: 1%;
+        right: 2%;
+        bottom: 2%;
+        top: 15%;
+        z-index: 1;
+    }
+    .contenedor-contacto {
+        height: 43%;
+    }
+    .reaccione {
+        width: 100%;
+        height: 20%;
+        position: absolute;
+        bottom: 0%;
+        background-color: rgba(44, 44, 44, 0.5);
+        border-radius: 0% 0% 15% 15%;
+        mask-image: linear-gradient(1deg,black 60%, transparent);
+    }
+    .line {
+        width: 96%; 
+        height: 3px;
+        margin: 0% 0% 0% 2%;
+        background-color: #ffffff;
+        top: 10%;
+        left: 5%;
+    }
+    .heartli{
+        width: 40px; 
+        height: 28px;
+        stroke-width: 11px;
+        position: absolute;
+        bottom: 1%;
+        left: 5%;
+    }
+    .heartli path {
+        fill: transparent;
+        stroke: 10%;
+        stroke: #ffffff;
+    }
+    .viewOpen{
+        width: 37px;
+        height: 29px;
+        margin: 0% 0% 0% 0%;
+        position: absolute;
+        bottom: 1%;
+        right: 5%;
+    }
+    .viewOpen:active{
+        animation: viewRebot 1s running;
+    }
+    .pic {
+        padding: 0% 0% 0% 0%;
+        margin: 0% 0% 0% 0%;
+        width: 38%;
+        height: 40%;
+        position: absolute;
+        left: 4%;
+        top: 2%;
+    }
+    .foto {
+        padding: 0% 0% 0% 0%;
+        margin: 0% 0% 0% 0%;
+        width: 100%;
+        height: 100%;
+        border-radius: 10%;
+        position: absolute;
+        inset: 0;
+        margin: auto;
+        box-shadow: 0px 3px 6px 3px;
+        
+    }
+    article svg {
+        position: absolute;
+        inset: 0;
+        margin: auto;
+        scale: 0;
+        opacity: 0%;
+    }
+    .contenedor-viewer {
+        background: linear-gradient(150deg, #919191, #b9b8b8);
+        height: 91%;
+        width: 88%;
+        border-radius: 5px;
+        border: 3px solid rgba(145, 145, 145, 0.7);
+        backdrop-filter: blur(25px);
+        position: absolute;
+        display: flex;
+        left: 6%;
+        top: 4%;
+    }
+    .nombres {
+        padding: 0% 0% 0% 0%;
+        margin: 0% 0% 0% 0%;
+        width: 24vh;
+        height: 29vh;
+        position: absolute;
+        right: 7%;
+        top: 2%;
+        border-radius: 8px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+    }
+    .name {
+        color: rgb(48, 48, 48);
+        width: 1%;
+        font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+        text-align: justify;
+        position: absolute;
+        left: 18%;
+        top: 4%;
+        font-size: 250%;
+    }
+    .cognome {
+        color: rgb(48, 48, 48);
+        font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+        position: absolute;
+        left: 7%;
+        top: 25%;
+        font-size: 250%;
+    }
+    .edad {
+        color: rgb(231, 231, 231);
+        font-size: 150%;
+        font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+        position: absolute;
+        left: 26%;
+        top: 50%;
+    }
+    .raza {
+        color: rgb(48, 48, 48);
+        font-size: 30px;
+        font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+        position: absolute;
+        left: 32%;
+        top: 65%;
+    }
+    .messenger {
+        position: absolute;
+        top: 46%;
+        left: 5%;
+        right: 5%;
+        font-size: 125%;
+        text-align: justify;
+        font-family: Arial, Helvetica, sans-serif;
+    }
+    .fab {
+        animation: fade 3s;
+        position: absolute;
+        left: 25%;
+        top: 86%;
+        font-size: 66%;
+        width: 50%;
+        text-align: center;
+        text-decoration: none;
+        padding: 2% 1% 2% 1%;
+        margin: 1px 1px;
+        border-radius: 5px;
+    }
+    .fab:hover {
+        opacity: 0.7;
+        text-align: center;
+    }
+        
+    .fa-whatsapp {
+        background: linear-gradient(150deg, #c70202, #fd0000);
+        color: white;
+        text-align: center;
+        font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    }
+}
+@media (min-width: 800px) {
+    .ContenedorGeneral {
+        width: 98%;
+        height: 105%;
+        position: relative;
+        inset: 1% 0% 0% 1%;
+        padding: 5px 0;
+        display: grid;
+        gap: 1%;
+    }
+    .brand {
+        background-position: center center;
+        color: rgb(44, 44, 44);
+        font-size: 120%;
+        font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+        position: absolute;
+        right: 41%;
+        bottom: 2%;
+        z-index: 3;
+    }
+    .footer {
+        width: 100%;
+        height: 75%;
+        position: absolute;
+        left: 0%;
+        top: 1%;
+    }
+    .footerback {
+        width: 98%;
+        height: 74%;
+        position: absolute;
+        left: 0.5%;
+        top: 34%;
+        z-index: 1;
+    }
+    .contenedor-body {
+        background-color: rgb(44, 44, 44);
+        width: 97%;
+        height: 76.5%;
+        margin: 0% 0% 0% 0%;
+        border-radius: 5px;
+        position: absolute;
+        left: 1%;
+        right: 2%;
+        bottom: 2%;
+        top: 15%;
+        z-index: 1;
+    }
+    .contenedor-contacto {
+        height: 43%;
+    }
+    .reaccione {
+        width: 100%;
+        height: 20%;
+        position: absolute;
+        bottom: 0%;
+        background-color: rgba(44, 44, 44, 0.5);
+        border-radius: 0% 0% 15% 15%;
+        mask-image: linear-gradient(1deg,black 60%, transparent);
+    }
+    .line {
+        width: 96%; 
+        height: 3px;
+        margin: 0% 0% 0% 2%;
+        background-color: #ffffff;
+        top: 10%;
+        left: 5%;
+    }
+    .heartli{
+        width: 40px; 
+        height: 28px;
+        stroke-width: 11px;
+        position: absolute;
+        bottom: 1%;
+        left: 5%;
+    }
+    .heartli path {
+        fill: transparent;
+        stroke: 10%;
+        stroke: #ffffff;
+    }
+    .viewOpen{
+        width: 37px;
+        height: 29px;
+        margin: 0% 0% 0% 0%;
+        position: absolute;
+        bottom: 1%;
+        right: 5%;
+    }
+    .viewOpen:active{
+        animation: viewRebot 1s running;
+    }
+    .pic {
+        padding: 0% 0% 0% 0%;
+        margin: 0% 0% 0% 0%;
+        width: 26%;
+        height: 41%;
+        position: absolute;
+        left: 15%;
+        top: 2%;
+    }
+    .foto {
+        padding: 0% 0% 0% 0%;
+        margin: 0% 0% 0% 0%;
+        width: 100%;
+        height: 100%;
+        border-radius: 10%;
+        position: absolute;
+        inset: 0;
+        margin: auto;
+        box-shadow: 0px 3px 6px 3px;
+        
+    }
+    article svg {
+        position: absolute;
+        inset: 0;
+        margin: auto;
+        scale: 0;
+        opacity: 0%;
+    }
+    .contenedor-viewer {
+        background: linear-gradient(150deg, #919191, #b9b8b8);
+        height: 91%;
+        width: 88%;
+        border-radius: 5px;
+        border: 3px solid rgba(145, 145, 145, 0.7);
+        backdrop-filter: blur(25px);
+        position: absolute;
+        display: flex;
+        left: 6%;
+        top: 4%;
+    }
+    .nombres {
+        padding: 0% 0% 0% 0%;
+        margin: 0% 0% 0% 0%;
+        width: 32vh;
+        height: 29vh;
+        position: absolute;
+        right: 11%;
+        top: 5%;
+        border-radius: 8px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+    }
+    .name {
+        color: rgb(48, 48, 48);
+        width: 1%;
+        font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+        text-align: justify;
+        position: absolute;
+        left: 18%;
+        top: 4%;
+        font-size: 250%;
+    }
+    .cognome {
+        color: rgb(48, 48, 48);
+        font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+        position: absolute;
+        left: 7%;
+        top: 25%;
+        font-size: 250%;
+    }
+    .edad {
+        color: rgb(231, 231, 231);
+        font-size: 150%;
+        font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+        position: absolute;
+        left: 26%;
+        top: 50%;
+    }
+    .raza {
+        color: rgb(48, 48, 48);
+        font-size: 30px;
+        font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+        position: absolute;
+        left: 32%;
+        top: 65%;
+    }
+    .messenger {
+        position: absolute;
+        top: 48%;
+        left: 5%;
+        right: 5%;
+        font-size: 142%;
+        text-align: justify;
+        font-family: Arial, Helvetica, sans-serif;
+    }
+    .fab {
+        animation: fade 3s;
+        position: absolute;
+        left: 25%;
+        top: 86%;
+        font-size: 66%;
+        width: 50%;
+        text-align: center;
+        text-decoration: none;
+        padding: 2% 1% 2% 1%;
+        margin: 1px 1px;
+        border-radius: 5px;
+    }
+    .fab:hover {
+        opacity: 0.7;
+        text-align: center;
+    }
+        
+    .fa-whatsapp {
+        background: linear-gradient(150deg, #c70202, #fd0000);
+        color: white;
+        text-align: center;
+        font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    }
+}
+@media (min-width: 1000px) {
+    .ContenedorGeneral {
+        width: 98%;
+        height: 124%;
+        position: relative;
+        inset: 1% 0% 0% 1%;
+        padding: 5px 0;
+        display: grid;
+        gap: 1%;
+    }
+    .brand {
+        background-position: center center;
+        color: rgb(44, 44, 44);
+        font-size: 120%;
+        font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+        position: absolute;
+        right: 41%;
+        bottom: 2%;
+        z-index: 3;
+    }
+    .footer {
+        width: 100%;
+        height: 75%;
+        position: absolute;
+        left: 0%;
+        top: 1%;
+    }
+    .footerback {
+        width: 98%;
+        height: 74%;
+        position: absolute;
+        left: 0.5%;
+        top: 34%;
+        z-index: 1;
+    }
+    .contenedor-body {
+        background-color: rgb(44, 44, 44);
+        width: 97%;
+        height: 76.5%;
+        margin: 0% 0% 0% 0%;
+        border-radius: 5px;
+        position: absolute;
+        left: 1%;
+        right: 2%;
+        bottom: 2%;
+        top: 15%;
+        z-index: 1;
+    }
+    .contenedor-contacto {
+        height: 43%;
+    }
+    .reaccione {
+        width: 100%;
+        height: 20%;
+        position: absolute;
+        bottom: 0%;
+        background-color: rgba(44, 44, 44, 0.5);
+        border-radius: 0% 0% 15% 15%;
+        mask-image: linear-gradient(1deg,black 60%, transparent);
+    }
+    .line {
+        width: 96%; 
+        height: 3px;
+        margin: 0% 0% 0% 2%;
+        background-color: #ffffff;
+        top: 10%;
+        left: 5%;
+    }
+    .heartli{
+        width: 40px; 
+        height: 28px;
+        stroke-width: 11px;
+        position: absolute;
+        bottom: 1%;
+        left: 5%;
+    }
+    .heartli path {
+        fill: transparent;
+        stroke: 10%;
+        stroke: #ffffff;
+    }
+    .viewOpen{
+        width: 37px;
+        height: 29px;
+        margin: 0% 0% 0% 0%;
+        position: absolute;
+        bottom: 1%;
+        right: 5%;
+    }
+    .viewOpen:active{
+        animation: viewRebot 1s running;
+    }
+    .pic {
+        padding: 0% 0% 0% 0%;
+        margin: 0% 0% 0% 0%;
+        width: 30%;
+        height: 48%;
+        position: absolute;
+        left: 15%;
+        top: 2%;
+    }
+    .foto {
+        padding: 0% 0% 0% 0%;
+        margin: 0% 0% 0% 0%;
+        width: 100%;
+        height: 100%;
+        border-radius: 10%;
+        position: absolute;
+        inset: 0;
+        margin: auto;
+        box-shadow: 0px 3px 6px 3px;
+        
+    }
+    article svg {
+        position: absolute;
+        inset: 0;
+        margin: auto;
+        scale: 0;
+        opacity: 0%;
+    }
+    .contenedor-viewer {
+        background: linear-gradient(150deg, #919191, #b9b8b8);
+        height: 91%;
+        width: 88%;
+        border-radius: 5px;
+        border: 3px solid rgba(145, 145, 145, 0.7);
+        backdrop-filter: blur(25px);
+        position: absolute;
+        display: flex;
+        left: 6%;
+        top: 4%;
+    }
+    .nombres {
+        padding: 0% 0% 0% 0%;
+        margin: 0% 0% 0% 0%;
+        width: 48vh;
+        height: 43vh;
+        position: absolute;
+        right: 6%;
+        top: 5%;
+        border-radius: 8px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+    }
+    .name {
+        color: rgb(48, 48, 48);
+        width: 1%;
+        font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+        text-align: justify;
+        position: absolute;
+        left: 18%;
+        top: 4%;
+        font-size: 350%;
+    }
+    .cognome {
+        color: rgb(48, 48, 48);
+        font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+        position: absolute;
+        left: 7%;
+        top: 25%;
+        font-size: 350%;
+    }
+    .edad {
+        color: rgb(231, 231, 231);
+        font-size: 150%;
+        font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+        position: absolute;
+        left: 35%;
+        top: 50%;
+    }
+    .raza {
+        color: rgb(48, 48, 48);
+        font-size: 30px;
+        font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+        position: absolute;
+        left: 39%;
+        top: 65%;
+    }
+    .messenger {
+        position: absolute;
+        top: 56%;
+        left: 5%;
+        right: 5%;
+        font-size: 162%;
+        text-align: justify;
+        font-family: Arial, Helvetica, sans-serif;
+    }
+    .fab {
+        animation: fade 3s;
+        position: absolute;
+        left: 25%;
+        top: 86%;
+        font-size: 66%;
+        width: 50%;
+        text-align: center;
+        text-decoration: none;
+        padding: 2% 1% 2% 1%;
+        margin: 1px 1px;
+        border-radius: 5px;
+    }
+    .fab:hover {
+        opacity: 0.7;
+        text-align: center;
+    }
+        
+    .fa-whatsapp {
+        background: linear-gradient(150deg, #c70202, #fd0000);
+        color: white;
+        text-align: center;
+        font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    }
+}
+
+@media (min-width: 1800px) {
+    .ContenedorGeneral {
+        width: 98%;
+        height: 139%;
+        position: relative;
+        inset: 1% 0% 0% 1%;
+        padding: 5px 0;
+        display: grid;
+        gap: 1%;
+    }
+    .brand {
+        background-position: center center;
+        color: rgb(44, 44, 44);
+        font-size: 120%;
+        font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+        position: absolute;
+        right: 41%;
+        bottom: 2%;
+        z-index: 3;
+    }
+    .footer {
+        width: 100%;
+        height: 75%;
+        position: absolute;
+        left: 0%;
+        top: 1%;
+    }
+    .footerback {
+        width: 98%;
+        height: 74%;
+        position: absolute;
+        left: 0.5%;
+        top: 34%;
+        z-index: 1;
+    }
+    .contenedor-body {
+        background-color: rgb(44, 44, 44);
+        width: 97%;
+        height: 76.5%;
+        margin: 0% 0% 0% 0%;
+        border-radius: 5px;
+        position: absolute;
+        left: 1%;
+        right: 2%;
+        bottom: 2%;
+        top: 15%;
+        z-index: 1;
+    }
+    .contenedor-contacto {
+        height: 43%;
+    }
+    .reaccione {
+        width: 100%;
+        height: 20%;
+        position: absolute;
+        bottom: 0%;
+        background-color: rgba(44, 44, 44, 0.5);
+        border-radius: 0% 0% 15% 15%;
+        mask-image: linear-gradient(1deg,black 60%, transparent);
+    }
+    .line {
+        width: 96%; 
+        height: 3px;
+        margin: 0% 0% 0% 2%;
+        background-color: #ffffff;
+        top: 10%;
+        left: 5%;
+    }
+    .heartli{
+        width: 40px; 
+        height: 28px;
+        stroke-width: 11px;
+        position: absolute;
+        bottom: 1%;
+        left: 5%;
+    }
+    .heartli path {
+        fill: transparent;
+        stroke: 10%;
+        stroke: #ffffff;
+    }
+    .viewOpen{
+        width: 37px;
+        height: 29px;
+        margin: 0% 0% 0% 0%;
+        position: absolute;
+        bottom: 1%;
+        right: 5%;
+    }
+    .viewOpen:active{
+        animation: viewRebot 1s running;
+    }
+    .pic {
+        padding: 0% 0% 0% 0%;
+        margin: 0% 0% 0% 0%;
+        width: 26%;
+        height: 48%;
+        position: absolute;
+        left: 15%;
+        top: 2%;
+    }
+    .foto {
+        padding: 0% 0% 0% 0%;
+        margin: 0% 0% 0% 0%;
+        width: 100%;
+        height: 100%;
+        border-radius: 10%;
+        position: absolute;
+        inset: 0;
+        margin: auto;
+        box-shadow: 0px 3px 6px 3px;
+        
+    }
+    article svg {
+        position: absolute;
+        inset: 0;
+        margin: auto;
+        scale: 0;
+        opacity: 0%;
+    }
+    .contenedor-viewer {
+        background: linear-gradient(150deg, #919191, #b9b8b8);
+        height: 91%;
+        width: 88%;
+        border-radius: 5px;
+        border: 3px solid rgba(145, 145, 145, 0.7);
+        backdrop-filter: blur(25px);
+        position: absolute;
+        display: flex;
+        left: 6%;
+        top: 4%;
+    }
+    .nombres {
+        padding: 0% 0% 0% 0%;
+        margin: 0% 0% 0% 0%;
+        width: 48vh;
+        height: 43vh;
+        position: absolute;
+        right: 12%;
+        top: 5%;
+        border-radius: 8px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+    }
+    .name {
+        color: rgb(48, 48, 48);
+        width: 1%;
+        font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+        text-align: justify;
+        position: absolute;
+        left: 18%;
+        top: 4%;
+        font-size: 350%;
+    }
+    .cognome {
+        color: rgb(48, 48, 48);
+        font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+        position: absolute;
+        left: 7%;
+        top: 25%;
+        font-size: 350%;
+    }
+    .edad {
+        color: rgb(231, 231, 231);
+        font-size: 150%;
+        font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+        position: absolute;
+        left: 35%;
+        top: 50%;
+    }
+    .raza {
+        color: rgb(48, 48, 48);
+        font-size: 30px;
+        font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+        position: absolute;
+        left: 39%;
+        top: 65%;
+    }
+    .messenger {
+        position: absolute;
+        top: 56%;
+        left: 5%;
+        right: 5%;
+        font-size: 220%;
+        text-align: justify;
+        font-family: Arial, Helvetica, sans-serif;
+    }
+    .fab {
+        animation: fade 3s;
+        position: absolute;
+        left: 25%;
+        top: 86%;
+        font-size: 66%;
+        width: 50%;
+        text-align: center;
+        text-decoration: none;
+        padding: 2% 1% 2% 1%;
+        margin: 1px 1px;
+        border-radius: 5px;
+    }
+    .fab:hover {
+        opacity: 0.7;
+        text-align: center;
+    }
+        
+    .fa-whatsapp {
+        background: linear-gradient(150deg, #c70202, #fd0000);
+        color: white;
+        text-align: center;
+        font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    }
+}
